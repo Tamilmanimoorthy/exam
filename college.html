@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<title>York Admission Application</title>
+</head>
+<style>
+    .tit{
+        padding-left: 45%;
+        padding-right: 45%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        align-items: center;
+        background-color: aqua;
+        font-style: italic;
+        font-size: larger;
+    }
+    .stt{
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    .divs
+    {
+        background-image:colll;
+    }
+</style>
+
+
+<body>
+    <form id="admissionForm">
+        <div class="divs">
+        
+        <input type="text" id="title" name="title" placeholder="York Admission Application" class="tit"><br>
+        
+        
+        <br>
+        <br>
+        
+        <label for="sname" class="stt">Student Name:</label>
+        <input type="text" id="sname" name="sname" placeholder="Enter the student name" required pattern="[A-Za-z\s]+"class="stt"><br>
+        <br>
+
+        <label for="phno"class="stt">Phone Number:</label>
+        <input type="tel" id="phno" name="phno" placeholder="Enter the phone number" required pattern="[789]\d{9}"class="stt"><br>
+        <br>
+
+        <label for="aid"class="stt">Admission ID:</label>
+        <input type="number" id="aid" name="aid" placeholder="Enter the admission ID"class="stt" required><br>
+        <br>
+
+        <label for="admissiondate"class="stt">Date of Admission:</label>
+        <input type="date" id="admissiondate" name="admissiondate"class="stt" required><br>
+        <br>
+
+        <label for="deptname"class="stt">Department Name:</label>
+        <select id="deptname" name="deptname"class="stt" required><br>
+            <option value="" disabled selected class="stt">Select Department..</option>
+            <option value="EEE">EEE</option>
+            <option value="ECE">ECE</option>
+            <option value="CSE">CSE</option>
+            <option value="MECH">MECH</option>
+            <option value="CIVIL">CIVIL</option>
+            <option value="IT">IT</option>
+        </select><br>
+        <br>
+
+        <label class="stt">Prefer College Hostel:</label>
+        <input type="radio" id="yes" name="preferHostel" value="yes"class="stt" required>
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="preferHostel" value="no"class="stt"required>
+        <label for="no"class="stt">No</label><br>
+        <br>
+
+        <label for="firstGraduate"class="stt">First Graduate:</label>
+        <input type="checkbox" id="firstGraduate" name="firstGraduate">
+        <input type="text" id="title" name="title" placeholder="Confrim Admission" class="tit"><br>
+    </form>
+</div>
+</body>
+</html>
+
+</div>
+</form>
+</html>

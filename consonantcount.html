@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+     <style>
+        .btn{
+            background-color: blue;
+            color: black;
+            
+        }
+        .ali{
+            box-sizing: border-box green;
+        }
+        </style>
+
+<body>
+    
+    <label for="inputtext" >Enter the Text</label><br>
+    <label for="inputtext"></label>
+<input type="text" id="inputtext"><br>
+<button onclick="countConsonants()" id="countbtn" class="btn">Ok</button>
+</body>
+<body>
+    <script>
+        function countConsonants() {
+            const inttext = document.getElementById("inputtext").value.toLowerCase();
+            const a = /[bcdfghjklmnpqrstvwxyz]/g;
+            const count= (inttext.match()).length;
+
+            if (Count === 0) {
+                alert("No Consonants");
+            } else if (Count === 7) {
+                alert("Number of consonants: 7");
+            } else {
+                alert(`Number of consonants: ${Count}`);
+            }
+        }
+    </script>
+</head>
+</html>
+
+
+    
